@@ -13,7 +13,7 @@ function errorHandler(error){
     console.log(error);
 }
 
-var dataFetch = () => {
+function dataFetch() {
     var inptxt =  inputText.value
     fetch(urlConverter(inptxt))
     .then(response => response.json())
